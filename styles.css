@@ -4,31 +4,37 @@ body {
 
 .liftoff-panel {
     position: relative;
-    width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .liftoff-panel img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%; 
-    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .launchpad {
-    /* position: absolute;
-	width: 25%;
-    top: 0;
-    left: 0; */
     z-index: 1;
+    height: 90vh;
+    opacity: 0.5;
 }
 
-
 .SLS-rocket {
-    /* position: absolute;
-    width: 25%;
-    top: 0;
-    left: 0; */
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.5;
+    height: 90vh;
+}
+
+.artemis-header {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 45vh;
+    transform: translateY(-50%);
+    font-family: 'Roboto Flex', sans-serif;
+    font-variation-settings: "wdth" 10;
+    font-variation-settings: "wght" 50;
+    font-size: 100vh;
 }
