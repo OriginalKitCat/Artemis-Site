@@ -1,11 +1,12 @@
 body {
-    background-color: cornflowerblue;
+    background-color: rgb(145, 171, 221);
 }
 
 .liftoff-panel {
     position: relative;
     display: flex;
     justify-content: center;
+    height: 140vh;
 }
 
 .liftoff-panel img {
@@ -17,24 +18,26 @@ body {
 
 .launchpad {
     z-index: 1;
-    height: 90vh;
-    opacity: 0.5;
+    height: 140vh;
 }
 
 .SLS-rocket {
     z-index: 2;
-    opacity: 0.5;
-    height: 90vh;
+    height: 140vh;
+    transition: transform 1s ease-out;
+}
+
+.SLS-rocket.fly {
+    transform: translateX(-50%) translateY(-500px);
 }
 
 .artemis-header {
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 45vh;
-    transform: translateY(-50%);
+    top: 7vh;
     font-family: 'Roboto Flex', sans-serif;
-    font-variation-settings: "wdth" 10;
-    font-variation-settings: "wght" 50;
-    font-size: 100vh;
+    font-variation-settings: "wdth" 10, "wght" 300;
+    font-size: clamp(1rem, 75vw, 140vh);
+    color: #844823;
 }

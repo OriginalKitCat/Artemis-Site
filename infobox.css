@@ -1,0 +1,15 @@
+.bigbrownbox {
+    background-color: #ce6d2a;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.crewinfo {
+    margin: 30px;
+}
+
+.crewinfo h2 {
+    display: flex;
+    justify-content: center;
+
+}
