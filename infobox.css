@@ -4,12 +4,37 @@
     margin: 15px;
 }
 
-.crewinfo {
+.info {
     margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.crewinfo h2 {
+.info h2 {
+    font-family: 'Roboto Flex', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-size: clamp(1rem, 10vw, 10vh);
+}
 
+.info h4 {
+    font-family: 'Roboto Flex', sans-serif;
+    display: flex;
+    justify-content: left;
+}
+
+.info text {
+    flex: 1 1 300px;
+}
+
+.orion {
+    display: flex;
+    float: right;
+    margin-left: 10vw;
+    transform: translateX(30px);
+    flex: 1 1 200px;
+    max-width: 250px;
+    height: auto;
 }

@@ -24,12 +24,13 @@ body {
 .SLS-rocket {
     z-index: 2;
     height: 140vh;
-    transition: transform 1s ease-out;
+    /* transition: transform 1s ease-out; */
 }
 
+/* 
 .SLS-rocket.fly {
     transform: translateX(-50%) translateY(-500px);
-}
+} */
 
 .artemis-header {
     position: absolute;
