@@ -15,6 +15,7 @@
 .text {
     display: block;
     align-items: center;
+    color: antiquewhite;
 }
 
 .text h2 {
@@ -22,14 +23,25 @@
     display: block;
     justify-content: left;
     font-size: clamp(1rem, 42vw, 10vh);
+    margin-top: 0;
 }
 
 .text h4 {
+    margin: 0;
+    margin-top: 5vh;
     font-family: 'Roboto Flex', sans-serif;
+    font-size: clamp(1rem, 22vw, 6vh);
     display: block;
     justify-content: left;
     
 }
+
+.blockOfText {
+    word-wrap: break-word;
+    width: 30vw;
+    font-size: clamp(1rem, 2vh, 12vw);
+}
+
 /* 
 .info text {
     flex: 1 1 300px;
