@@ -23,14 +23,15 @@
     display: block;
     justify-content: left;
     font-size: clamp(1rem, 42vw, 10vh);
-    margin-top: 0;
+    margin-top: 5vh;
 }
 
 .text h4 {
     margin: 0;
-    margin-top: 5vh;
+    margin-top: clamp(1rem, 22vw, 6vh);
     font-family: 'Roboto Flex', sans-serif;
-    font-size: clamp(1rem, 22vw, 6vh);
+    /* font-size: clamp(1rem, 22vw, 6vh); */
+    font-size: clamp(1rem, 2vw, 6vh);
     display: block;
     justify-content: left;
     
@@ -39,7 +40,8 @@
 .blockOfText {
     word-wrap: break-word;
     width: 30vw;
-    font-size: clamp(1rem, 2vh, 12vw);
+    font-size: clamp(1rem, 3vh, 12vw);
+    margin-bottom: 5vh;
 }
 
 /* 
@@ -55,4 +57,5 @@
     flex: 1 1 200px;
     max-width: 40vw;
     height: auto;
+    border-radius: 15px;
 }
