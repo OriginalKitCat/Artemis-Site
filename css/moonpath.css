@@ -1,0 +1,27 @@
+.toTheMoon {
+    margin: 60px;
+}
+
+.othertext {
+    color: #844823;
+    display: block;
+    align-items: center;
+}
+
+.othertext h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    display: block;
+    justify-content: left;
+    font-size: clamp(1rem, 42vw, 10vh);
+    margin-top: 5vh;
+}
+
+.othertext h4 {
+    margin: 0;
+    margin-top: clamp(1rem, 22vw, 6vh);
+    font-family: 'Roboto Flex', sans-serif;
+    /* font-size: clamp(1rem, 22vw, 6vh); */
+    font-size: clamp(1rem, 2vw, 6vh);
+    display: block;
+    justify-content: left;
+}

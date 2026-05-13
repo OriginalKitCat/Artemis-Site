@@ -27,4 +27,7 @@ document.addEventListener("resize", () => {
     if (window.screen.width <= window.screen.height) {
         orion_image.style.transform = "border-radius: 0px;"
     }
+    else {
+        orion_image.style.transform = "border-radius: 15px;"
+    }
 })
