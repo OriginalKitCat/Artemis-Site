@@ -25,3 +25,20 @@
     display: block;
     justify-content: left;
 }
+
+.path {
+    display: flex;
+    float: right;
+    margin-left: 10vw;
+    transform: translateX(50px);
+    /* flex: 1 1 200px; */
+    max-width: 40vw;
+    height: auto;
+    border-radius: 15px;
+    z-index: 1;
+    /* transform: translateY(var(--hero-y)) perspective(1000px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+    transform-style: preserve-3d;
+    transition: transform var(--tilt-transition) cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+    cursor: pointer; */
+}
