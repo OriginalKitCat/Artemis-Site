@@ -6,6 +6,7 @@
 
 <head>
     <title>A fan site for Artemis II</title>
+    <link rel="icon" href="images/rocket.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="keywords" content="Artemis, NASA, rocket">
     <meta name="author" content="OriginalKitCat">
@@ -14,11 +15,13 @@
     <link rel="stylesheet" href="css/infobox.css">
     <link rel="stylesheet" href="css/rocket-panel.css">
     <link rel="stylesheet" href="css/moonpath.css">
+    <link rel="stylesheet" href="css/download-section.css">
     <!-- Fonts -->
     <link href="https://fonts.upset.dev/css2?family=Roboto+Flex:opsz,wght,wdth@8..144,100..1000,25..151&display=swap" rel="stylesheet">
     <!-- Jabab Script -->
     <!-- <script src="artemis-font-resizer.js"></script> This is not used at the state and has to be removed later on -->
-    <script src="rocket-animation.js" defer></script>
+    <script src="js-scripts/rocket-animation.js" defer></script>
+    <script src="js-scripts/path-card-tilt.js"></script>
 </head>
 
 <body>
@@ -43,10 +46,20 @@
         <div class="info">
             <div class="othertext">
                 <h4>ARTEMIS II</h4>
-                <h2>The jurney<br>to the moon</h2>
+                <h2>The jurney to the moon</h2>
                 <div class="blockOfText">Aliquam inventore voluptatem quia ut vitae voluptatem. Autem quis sint facilis sint. Mollitia temporibus numquam dolor.</div>
             </div>
-            <img class="path" src="images/path.png" alt="Imgage of Artemis II's path to the moon">
+            <div class="card-container">
+                <img class="path" src="images/path.png" alt="Imgage of Artemis II's path to the moon">
+            </div>
+        </div>
+    </div>
+
+    <div class="bigbrownbox" id="download-bib-brown-box">
+        <div class="download">
+            <h2>Download the poster!</h2>
+            <button class="download_button">Download</button>
+            <img class="poster-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fawesome-universe.com%2Fwp-content%2Fuploads%2F2025%2F08%2Fartemisii-poster.png&" alt="poster preview">
         </div>
     </div>
 

@@ -20,14 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// document.addEventListener("resize", () => {
+//     const orion_image = document.querySelector(".orion");
 
-document.addEventListener("resize", () => {
-    const orion_image = document.querySelector(".orion");
-
-    if (window.screen.width <= window.screen.height) {
-        orion_image.style.transform = "border-radius: 0px;"
-    }
-    else {
-        orion_image.style.transform = "border-radius: 15px;"
-    }
-})
+//     if (window.screen.width <= window.screen.height) {
+//         orion_image.style.transform = "border-radius: 0px;"
+//     }
+//     else {
+//         orion_image.style.transform = "border-radius: 15px;"
+//     }
+// })

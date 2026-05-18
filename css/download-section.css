@@ -1,0 +1,19 @@
+#download-bib-brown-box {
+    margin-top :12vh;
+}
+
+.poster-img {
+    border-radius: 15px;
+    width: clamp(1rem, 70vw, 50vh);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(15vh);
+}
+
+.download {
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+}
