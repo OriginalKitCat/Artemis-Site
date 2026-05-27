@@ -4,16 +4,54 @@
 
 .poster-img {
     border-radius: 15px;
-    width: clamp(1rem, 70vw, 50vh);
+    width: clamp(40vw, 60vh, 70vw);
     display: flex;
     margin-left: auto;
     margin-right: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: translateY(15vh);
+    /* transform: translateY(15vh); */
+    position: absolute;
 }
 
 .download {
-    margin: 50px;
+    justify-content: center;
+    margin: 10vh;
+    display: block;
+    /* overflow: hidden; */
+}
+
+.download h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 42vw, 10vh);
+    margin-top: 5vh;
+    color: #ffffff;
+}
+
+.download_button {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
     display: flex;
-    overflow: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+    color: #844823;
+    font-size: clamp(1rem, 3vh, 12vw);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px, 5px, 15px;
+    text-align: center;
+}
+
+.shadow-rect {
+    background: #2A7B9B;
+    background: linear-gradient(180deg,rgba(42, 123, 155, 0) 6%, rgba(132, 72, 35, 1) 100%);
+    width: clamp(40vw, 60vh, 70vw);
+    border-radius: 15px;
+    position: absolute;
+    height: clamp(56.56vw, 84.84vh, 98.98vw);
+}
+
+.img-preview {
+    position: relative;
 }
