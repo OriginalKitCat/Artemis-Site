@@ -2,22 +2,11 @@
     margin-top :12vh;
 }
 
-.poster-img {
-    border-radius: 15px;
-    width: clamp(40vw, 60vh, 70vw);
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* transform: translateY(15vh); */
-    position: absolute;
-}
-
 .download {
     justify-content: center;
-    margin: 10vh;
-    display: block;
-    /* overflow: hidden; */
+    margin: 50px;
+    display: absolute;
+    overflow: hidden;
 }
 
 .download h2 {
@@ -26,32 +15,91 @@
     align-items: center;
     justify-content: center;
     font-size: clamp(1rem, 42vw, 10vh);
-    margin-top: 5vh;
+    margin-top: 35px;
     color: #ffffff;
 }
 
 .download_button {
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: #ce6d2a;
     padding: 15px;
     border-radius: 15px;
     display: flex;
     font-family: 'Roboto Flex', sans-serif;
-    color: #844823;
+    color: #ffffff;
+    border-color: #ffffff;
     font-size: clamp(1rem, 3vh, 12vw);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px, 5px, 15px;
-    text-align: center;
+    font-weight: bold;
+    box-shadow: #d29162 0px 0px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+    top: calc(clamp(56.56vw, 84.84vh, 98.98vw) / 3 * 2 - 95px);
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+.download_button:hover {
+    background-color: #ffffff;
+    color: #ce6d2a;
+    border-color: #ce6d2a;
+    box-shadow: #ffffff 0px 0px 20px;
 }
 
 .shadow-rect {
     background: #2A7B9B;
-    background: linear-gradient(180deg,rgba(42, 123, 155, 0) 6%, rgba(132, 72, 35, 1) 100%);
+    background: linear-gradient(180deg,rgba(42, 123, 155, 0) 6%, rgba(132, 72, 35, 1) 70%);
     width: clamp(40vw, 60vh, 70vw);
     border-radius: 15px;
     position: absolute;
     height: clamp(56.56vw, 84.84vh, 98.98vw);
 }
 
+.shadow-rect::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(42, 123, 155, 0) 6%, rgba(132, 72, 35, 0.5) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .img-preview {
     position: relative;
+    width: clamp(40vw, 60vh, 70vw);
+    height: calc(clamp(56.56vw, 84.84vh, 98.98vw) / 3 * 2);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+
+.poster-img {
+    border-radius: 15px;
+    width: clamp(40vw, 60vh, 70vw);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+}
+
+.poster {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-preview:hover .poster{
+    transform: translateY(-150px);
+}
+
+.img-preview:hover .shadow-rect::after {
+    opacity: 1;
+}
+
+.img-preview:hover .download_button {
+    transform: scale(1.3) translateY(-3vh);
 }

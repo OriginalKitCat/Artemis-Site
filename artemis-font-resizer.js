@@ -1,1 +1,0 @@
-document.getElementsByClassName("artemis-header").style.color = "blue";

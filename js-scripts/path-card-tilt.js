@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const path = document.querySelector(".path");
-    if (!path) return; // graceful fallback
+    if (!path) return;
 
     path.addEventListener("mousemove", (e) => {
         const rect = path.getBoundingClientRect();
