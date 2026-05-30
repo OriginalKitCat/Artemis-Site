@@ -2,8 +2,9 @@
 
 This is a website with some information about the Artemis II mission by NASA.
 All artworks / images are created by myself.
+This is my very first html/css/js project.
 
-##Link to Project:
+##Link to Project: [Click here!!!](https://originalkitcat.github.io/Artemis-Site/)
 
 
 Created with <3
