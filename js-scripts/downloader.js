@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".download_button").addEventListener("click", async () => {
-        const response = await fetch("https://raw.githubusercontent.com/OriginalKitCat/Artemis-Site/main/poster/poster.pdf");
+        // const response = await fetch("https://raw.githubusercontent.com/OriginalKitCat/Artemis-Site/main/poster/poster.pdf");
+        const response = await fetch("/Artemis-Site/poster/poster.pdf");
         const blob = await response.blob();
 
         const url = URL.createObjectURL(blob);
