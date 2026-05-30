@@ -21,6 +21,11 @@ body {
     height: 140vh;
 }
 
+.dingsi {
+    z-index: 3;
+    height: 140vh;
+}
+
 .SLS-rocket {
     z-index: 2;
     height: 140vh;

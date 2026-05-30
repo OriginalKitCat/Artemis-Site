@@ -8,4 +8,4 @@ All artworks / images are created by myself.
 
 Created with <3
 Copyright all code / artworks 2026 OriginalKitCat
-For Licenses see License.md
+For Licenses see License.mdn2shi!
